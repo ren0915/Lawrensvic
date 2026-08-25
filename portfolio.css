@@ -18,7 +18,7 @@ a{text-decoration:none;color:inherit}
 .nav{display:flex;gap:2.5rem}.nav a{font:700 1.5rem 'Montserrat',sans-serif;color:#fff}.nav a:hover{color:#ffd7f5;transform:translateY(-2px)}
 .menu-toggle{display:none;background:none;color:#fff;border:0;font-size:2.6rem}
 .section{padding:10rem 7% 7rem;max-width:1500px;margin:auto}
-.hero{min-height:100vh;display:flex;align-items:center;justify-content:space-between;gap:6rem;padding-top:13rem;background:radial-gradient(circle at 75% 40%,rgba(231,0,158,.22),transparent 32%)}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;gap:6rem;padding-top:13rem;background:radial-gradient(circle at 75% 40%,rgba(231,0,158,.22),transparent 32%)}
 .hero-copy{max-width:760px}.eyebrow{font:700 1.25rem 'Montserrat',sans-serif;letter-spacing:4px;color:var(--pink);margin-bottom:1.2rem}
 .hero h1{font:800 clamp(4rem,7vw,8rem)/1.05 'Montserrat',sans-serif}.hero h1 span,.section-heading h2 span,.hero h2{color:var(--pink)}
 .hero h2{font:700 clamp(2rem,3vw,3.4rem) 'Montserrat',sans-serif;margin:2rem 0}
