@@ -13,37 +13,38 @@
 html{font-size:62.5%;scroll-behavior:smooth;scroll-padding-top:8rem}
 body{background:var(--purple);color:var(--white);font-family:'Quicksand',sans-serif;line-height:1.6;overflow-x:hidden}
 a{text-decoration:none;color:inherit}
-.site-header{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;padding:1.5rem 6%;background:linear-gradient(180deg,rgba(231,0,158,.96),rgba(64,12,88,.96));backdrop-filter:blur(12px);box-shadow:0 5px 25px rgba(0,0,0,.18)}
+.site-header{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;padding:2rem 3%;background:linear-gradient(180deg,rgba(231,0,158,.96),rgba(64,12,88,.96));backdrop-filter:blur(12px);box-shadow:0 5px 25px rgba(0,0,0,.18)}
 .brand{font:800 2.2rem 'Montserrat',sans-serif;letter-spacing:.5px}.brand span{color:#fff}
 .nav{display:flex;gap:2.5rem}.nav a{font:700 1.5rem 'Montserrat',sans-serif;color:#fff}.nav a:hover{color:#ffd7f5;transform:translateY(-2px)}
 .menu-toggle{display:none;background:none;color:#fff;border:0;font-size:2.6rem}
-.section{padding:10rem 7% 7rem;max-width:1500px;margin:auto}
+.section{padding:2rem 3% 4rem;max-width:1050px;margin:0;align-items:center}
 .hero{min-height:100vh;display:flex;align-items:center;justify-content:space-between;gap:6rem;padding-top:13rem;background:radial-gradient(circle at 75% 40%,rgba(231,0,158,.22),transparent 32%)}
 .hero-copy{max-width:760px}.eyebrow{font:700 1.25rem 'Montserrat',sans-serif;letter-spacing:4px;color:var(--pink);margin-bottom:1.2rem}
 .hero h1{font:800 clamp(4rem,7vw,8rem)/1.05 'Montserrat',sans-serif}.hero h1 span,.section-heading h2 span,.hero h2{color:var(--pink)}
 .hero h2{font:700 clamp(2rem,3vw,3.4rem) 'Montserrat',sans-serif;margin:2rem 0}
 .lead{font-size:1.8rem;color:var(--muted);max-width:650px}
 .hero-actions{display:flex;gap:1.5rem;margin-top:3rem;flex-wrap:wrap}
-.btn{padding:1.3rem 2rem;border-radius:999px;font:700 1.4rem 'Montserrat',sans-serif;border:1px solid var(--pink)}.btn.primary{background:var(--pink)}.btn.secondary{background:transparent}.btn:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(231,0,158,.3)}
+.btn{padding:1.5rem 2.5rem;border-radius:999px;font:700 1.4rem 'Montserrat',sans-serif;border:1px solid var(--pink)}.btn.primary{background:var(--pink)}.btn.secondary{background:transparent}.btn:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(231,0,158,.3)}
 .hero-visual{position:relative;min-width:340px;display:grid;place-items:center}.portrait-ring{width:340px;height:340px;border-radius:50%;padding:10px;background:linear-gradient(135deg,var(--pink),var(--purple),var(--pink));box-shadow:0 0 80px rgba(231,0,158,.35);animation:pulse 4s infinite}
 .portrait-placeholder{width:100%;height:100%;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 25%,#8d3fa5,#21112b 65%);font:800 8rem 'Montserrat',sans-serif}
 .floating-card{position:absolute;bottom:5%;right:-5%;background:rgba(27,23,34,.9);border:1px solid rgba(231,0,158,.5);padding:1.5rem 2rem;border-radius:18px;box-shadow:var(--shadow)}.floating-card strong{display:block;font:800 2rem 'Montserrat';color:var(--pink)}.floating-card span{font-size:1.2rem}
 .section-heading{text-align:center;margin-bottom:4rem}.section-heading h2{font:800 clamp(3rem,6vw,5.5rem) 'Montserrat',sans-serif}
 .about{background:linear-gradient(10deg,rgba(231,0,158,.12),rgba(64,12,88,.2));max-width:none}
-.about-grid{max-width:1200px;margin:auto;display:grid;grid-template-columns:.85fr 1.15fr;gap:2.5rem}.glass,.profile-card,.about-text,.interest-card,.favorite-card{background:rgba(27,23,34,.55);border:1px solid rgba(231,0,158,.28);box-shadow:var(--shadow);backdrop-filter:blur(12px)}
+.about-grid{max-width:1050px;margin:auto;display:grid;grid-template-columns:.85fr 1.15fr;gap:2.5rem}.glass,.profile-card,.about-text,.interest-card,.favorite-card{background:rgba(27,23,34,.55);border:1px solid rgba(231,0,158,.28);box-shadow:var(--shadow);backdrop-filter:blur(12px)}
 .profile-card{border-radius:30px;padding:3.5rem;text-align:center}.avatar{width:125px;height:125px;margin:0 auto 2rem;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--pink),var(--purple));font:800 3.5rem 'Montserrat';box-shadow:0 0 40px rgba(231,0,158,.3)}
 .profile-card h3{font:800 2.2rem 'Montserrat'}.role{color:var(--pink);font-weight:700;font-size:1.5rem;margin:.5rem 0 2rem}.details{text-align:left;border-top:1px solid rgba(255,255,255,.12);padding-top:2rem}.details p{font-size:1.5rem;margin:1rem 0;color:var(--muted)}
 .about-text{border-radius:30px;padding:4rem}.about-text h3{font:800 2.5rem 'Montserrat';margin-bottom:1.5rem}.about-text p{font-size:1.65rem;color:var(--muted);margin-bottom:1.5rem}.tags{display:flex;gap:1rem;flex-wrap:wrap;margin-top:2rem}.tags span{border:1px solid var(--pink);border-radius:999px;padding:.7rem 1.1rem;font-size:1.2rem;color:#fff}
-.cards{display:grid;gap:1.7rem}.cards.five{grid-template-columns:repeat(5,1fr)}.interest-card{padding:2.5rem 2rem;border-radius:24px;text-align:center}.interest-card:hover,.favorite-card:hover{transform:translateY(-8px);border-color:var(--pink)}.icon{font-size:4rem;margin-bottom:1rem}.interest-card h3,.favorite-card h3{font:700 1.8rem 'Montserrat';margin-bottom:.7rem}.interest-card p{font-size:1.35rem;color:var(--muted)}
+.cards{display:grid;gap:1.7rem}.cards.five{grid-template-columns:repeat(5,minmax(0,220px));justify-content:center}.interest-card{padding:2.5rem 2rem;border-radius:24px;text-align:center}.interest-card:hover,.favorite-card:hover{transform:translateY(-8px);border-color:var(--pink)}.icon{font-size:4rem;margin-bottom:1rem}.interest-card h3,.favorite-card h3{font:700 1.8rem 'Montserrat';margin-bottom:.7rem}.interest-card p{font-size:1.35rem;color:var(--muted)}
 .favorites{background:linear-gradient(180deg,rgba(0,0,0,.08),rgba(231,0,158,.09));max-width:none}.favorite-grid{max-width:1000px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}.favorite-card{padding:3rem;border-radius:26px;position:relative;overflow:hidden}.number{font:800 1.2rem 'Montserrat';color:var(--pink);letter-spacing:2px}.favorite-card ul{list-style:none;margin-top:1.5rem}.favorite-card li{font-size:1.5rem;color:var(--muted);padding:.7rem 0;border-bottom:1px solid rgba(255,255,255,.1)}
 .music-list{max-width:900px;margin:auto}.music-list a{display:grid;grid-template-columns:50px 1fr 1fr 30px;align-items:center;gap:1rem;padding:1.7rem 1.5rem;border-bottom:1px solid rgba(255,255,255,.13)}.music-list a:hover{background:rgba(231,0,158,.1);padding-left:2.3rem}.music-list span,.music-list em{color:var(--pink);font-style:normal}.music-list b{font:700 1.6rem 'Montserrat'}.music-list small{font-size:1.4rem;color:var(--muted)}
 .places{max-width:none;background:linear-gradient(10deg,rgba(231,0,158,.08),rgba(64,12,88,.25))}.places-grid{max-width:1200px;margin:auto;display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}.place-card{min-height:380px;border-radius:28px;overflow:hidden;position:relative;background:linear-gradient(180deg,#7b247a,#1b1722);background-size:cover;background-position:center;box-shadow:var(--shadow);display:flex;align-items:flex-end}.place-card::after{content:'';position:absolute;inset:0;background:linear-gradient(transparent 30%,rgba(0,0,0,.95))}.place-card>div{position:relative;z-index:1;padding:2rem}.place-card span{color:var(--pink);font:700 1.2rem 'Montserrat'}.place-card h3{font:800 2.1rem 'Montserrat';margin:.5rem 0}.place-card p{font-size:1.35rem;color:#ddd}.japan{background-image:linear-gradient(180deg,rgba(50,0,60,.15),rgba(27,23,34,.8)),url('assets/places/shibuyaJP.jpg')}.thailand{background-image:linear-gradient(180deg,rgba(50,0,60,.15),rgba(27,23,34,.8)),url('assets/places/chinatownTH.jpg')}.korea{background-image:linear-gradient(180deg,rgba(50,0,60,.15),rgba(27,23,34,.8)),url('assets/places/seoulK.jpg')}.usa{background-image:linear-gradient(180deg,rgba(50,0,60,.15),rgba(27,23,34,.8)),url('assets/places/sanfranciscoC.jpg')}.image-note{max-width:1200px;margin:2rem auto 0;color:#bcaec2;font-size:1.25rem}code{color:var(--pink)}
 .contact{max-width:none}.contact-box{max-width:1100px;margin:auto;padding:4rem;border-radius:30px;background:linear-gradient(135deg,rgba(231,0,158,.18),rgba(27,23,34,.7));border:1px solid rgba(231,0,158,.3);display:flex;justify-content:space-between;gap:3rem;align-items:center}.contact h2{font:800 clamp(3rem,5vw,5rem) 'Montserrat'}.contact h2 span{color:var(--pink)}.contact p:not(.eyebrow){color:var(--muted);font-size:1.4rem;max-width:650px}.social-links{display:flex;flex-direction:column;gap:1rem;min-width:220px}.social-links a{padding:1.2rem 1.5rem;border:1px solid var(--pink);border-radius:12px;font:700 1.3rem 'Montserrat'}.social-links a:hover{background:var(--pink)}
 footer{padding:3rem 7%;display:flex;justify-content:space-between;background:#21052f;color:#bcaec2;font-size:1.3rem}footer a{color:var(--pink)}
+
 @keyframes pulse{50%{transform:scale(1.03);filter:drop-shadow(0 0 25px rgba(231,0,158,.35))}}
 @media(max-width:1050px){.cards.five{grid-template-columns:repeat(3,1fr)}.places-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:850px){html{font-size:58%}.menu-toggle{display:block}.nav{display:none;position:absolute;top:100%;right:0;left:0;background:rgba(64,12,88,.98);padding:2rem;flex-direction:column;text-align:center}.nav.active{display:flex}.hero{flex-direction:column;text-align:center}.hero-copy{max-width:850px}.hero-actions{justify-content:center}.about-grid{grid-template-columns:1fr}.contact-box{flex-direction:column;align-items:flex-start}}
-@media(max-width:600px){.section{padding:8rem 5% 5rem}.hero{padding-top:12rem}.hero-visual{min-width:0}.portrait-ring{width:260px;height:260px}.cards.five,.favorite-grid,.places-grid{grid-template-columns:1fr}.music-list a{grid-template-columns:35px 1fr 25px}.music-list small{display:none}.music-list a em{grid-column:3}.contact-box{padding:2.5rem}.social-links{width:100%}footer{flex-direction:column;gap:1rem;text-align:center}}
+@media(max-width:600px){.section{padding:2rem 3% 4rem}.hero{padding-top:7rem}.hero-visual{min-width:0}.portrait-ring{width:260px;height:260px}.cards.five,.favorite-grid,.places-grid{grid-template-columns:1fr}.music-list a{grid-template-columns:35px 1fr 25px}.music-list small{display:none}.music-list a em{grid-column:3}.contact-box{padding:2.5rem}.social-links{width:100%}footer{flex-direction:column;gap:1rem;text-align:center}}
 
 
 /* ===== Portfolio Requirements: Skills + Projects + Image Support ===== */
@@ -75,3 +76,43 @@ code{color:var(--pink)}
 @media(max-width:850px){.menu-toggle{display:block}.nav{display:none;position:absolute;top:100%;right:0;left:0;background:rgba(64,12,88,.98);padding:2rem;flex-direction:column;text-align:center;gap:1.5rem}.nav.active{display:flex}.hero{flex-direction:column;text-align:center}.hero-actions{justify-content:center}.about-grid{grid-template-columns:1fr}.cards.five{grid-template-columns:repeat(2,1fr)}.places-grid{grid-template-columns:repeat(2,1fr)}.contact-box{flex-direction:column;align-items:flex-start}}
 @media(max-width:600px){.cards.five,.favorite-grid,.places-grid,.projects-grid,.skills-grid{grid-template-columns:1fr}.project-image{height:210px}.music-list a{grid-template-columns:35px 1fr 25px}.music-list small{display:none}.music-list a em{grid-column:3}.floating-card{right:-2rem}.portrait-ring{width:260px;height:260px}.contact-box{padding:2.5rem}.social-links{width:100%;min-width:0}}
 @media(max-width:380px){.hero-actions .btn{width:100%}.portrait-ring{width:220px;height:220px}}
+
+/* ===== Mobile Hero Order =====
+   On phones/tablets, show the profile picture BEFORE the personal introduction.
+   Desktop keeps the original two-column arrangement. */
+@media (max-width: 850px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .hero-visual {
+    order: 1;
+    width: 100%;
+    min-width: 0;
+    margin-bottom: 1rem;
+  }
+
+  .hero-copy {
+    order: 2;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding-top: 10rem;
+    gap: 2.5rem;
+  }
+
+  .hero-visual {
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+
+  .portrait-ring {
+    width: min(72vw, 280px);
+    height: min(72vw, 280px);
+  }
+}
