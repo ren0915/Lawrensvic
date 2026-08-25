@@ -10,7 +10,7 @@
   --shadow:0 18px 50px rgba(0,0,0,.28);
 }
 *{margin:0;padding:0;box-sizing:border-box}
-html{font-size:62.5%;scroll-behavior:smooth;scroll-padding-top:4rem}
+html{font-size:62.5%;scroll-behavior:smooth;scroll-padding-top:2rem}
 body{background:var(--purple);color:var(--white);font-family:'Quicksand',sans-serif;line-height:1.6;overflow-x:hidden}
 a{text-decoration:none;color:inherit}
 .site-header{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;padding:1.5rem 6%;background:linear-gradient(180deg,rgba(231,0,158,.96),rgba(64,12,88,.96));backdrop-filter:blur(12px);box-shadow:0 5px 25px rgba(0,0,0,.18)}
