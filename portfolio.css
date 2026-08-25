@@ -17,7 +17,7 @@ a{text-decoration:none;color:inherit}
 .brand{font:800 2.2rem 'Montserrat',sans-serif;letter-spacing:.5px}.brand span{color:#fff}
 .nav{display:flex;gap:2.5rem}.nav a{font:700 1.5rem 'Montserrat',sans-serif;color:#fff}.nav a:hover{color:#ffd7f5;transform:translateY(-2px)}
 .menu-toggle{display:none;background:none;color:#fff;border:0;font-size:2.6rem}
-.section{padding:2rem 3% 4rem;max-width:1200px;margin:0;align-items:center}
+.section{padding:2rem 3% 4rem;max-width:1050px;margin:0;align-items:center}
 .hero{min-height:100vh;display:flex;align-items:center;justify-content:space-between;gap:6rem;padding-top:13rem;background:radial-gradient(circle at 75% 40%,rgba(231,0,158,.22),transparent 32%)}
 .hero-copy{max-width:760px}.eyebrow{font:700 1.25rem 'Montserrat',sans-serif;letter-spacing:4px;color:var(--pink);margin-bottom:1.2rem}
 .hero h1{font:800 clamp(4rem,7vw,8rem)/1.05 'Montserrat',sans-serif}.hero h1 span,.section-heading h2 span,.hero h2{color:var(--pink)}
@@ -30,7 +30,7 @@ a{text-decoration:none;color:inherit}
 .floating-card{position:absolute;bottom:5%;right:-5%;background:rgba(27,23,34,.9);border:1px solid rgba(231,0,158,.5);padding:1.5rem 2rem;border-radius:18px;box-shadow:var(--shadow)}.floating-card strong{display:block;font:800 2rem 'Montserrat';color:var(--pink)}.floating-card span{font-size:1.2rem}
 .section-heading{text-align:center;margin-bottom:4rem}.section-heading h2{font:800 clamp(3rem,6vw,5.5rem) 'Montserrat',sans-serif}
 .about{background:linear-gradient(10deg,rgba(231,0,158,.12),rgba(64,12,88,.2));max-width:none}
-.about-grid{max-width:1200px;margin:auto;display:grid;grid-template-columns:.85fr 1.15fr;gap:2.5rem}.glass,.profile-card,.about-text,.interest-card,.favorite-card{background:rgba(27,23,34,.55);border:1px solid rgba(231,0,158,.28);box-shadow:var(--shadow);backdrop-filter:blur(12px)}
+.about-grid{max-width:1050px;margin:auto;display:grid;grid-template-columns:.85fr 1.15fr;gap:2.5rem}.glass,.profile-card,.about-text,.interest-card,.favorite-card{background:rgba(27,23,34,.55);border:1px solid rgba(231,0,158,.28);box-shadow:var(--shadow);backdrop-filter:blur(12px)}
 .profile-card{border-radius:30px;padding:3.5rem;text-align:center}.avatar{width:125px;height:125px;margin:0 auto 2rem;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--pink),var(--purple));font:800 3.5rem 'Montserrat';box-shadow:0 0 40px rgba(231,0,158,.3)}
 .profile-card h3{font:800 2.2rem 'Montserrat'}.role{color:var(--pink);font-weight:700;font-size:1.5rem;margin:.5rem 0 2rem}.details{text-align:left;border-top:1px solid rgba(255,255,255,.12);padding-top:2rem}.details p{font-size:1.5rem;margin:1rem 0;color:var(--muted)}
 .about-text{border-radius:30px;padding:4rem}.about-text h3{font:800 2.5rem 'Montserrat';margin-bottom:1.5rem}.about-text p{font-size:1.65rem;color:var(--muted);margin-bottom:1.5rem}.tags{display:flex;gap:1rem;flex-wrap:wrap;margin-top:2rem}.tags span{border:1px solid var(--pink);border-radius:999px;padding:.7rem 1.1rem;font-size:1.2rem;color:#fff}
