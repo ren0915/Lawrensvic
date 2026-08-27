@@ -161,17 +161,107 @@
     </section>
 
     <section id="favorites" class="section favorites">
-      <div class="section-heading">
-        <p class="eyebrow">05 • A FEW OF MY FAVORITES</p>
-        <h2>Favorite <span>Things</span></h2>
-      </div>
-      <div class="favorite-grid">
-        <article class="favorite-card"><span class="number">01</span><h3>Fruits</h3><ul><li>Apples</li><li>Oranges</li><li>Grapes</li></ul></article>
-        <article class="favorite-card"><span class="number">02</span><h3>Colors</h3><ul><li>Black</li><li>White</li><li>Blue</li></ul></article>
-        <article class="favorite-card"><span class="number">03</span><h3>Viand</h3><ul><li>Pork Adoboo</li><li>Sour Pork and Liver Stew</li><li>Ground Pork</li></ul></article>
-      </div>
-      <p class="image-note">NOTE:These things are my Top 3 picks in terms of Foods and Colors.</p>
-    </section>
+
+  <div class="section-heading">
+
+    <p class="eyebrow">
+      05 • A FEW OF MY FAVORITES
+    </p>
+
+    <h2>
+      Favorite <span>Things</span>
+    </h2>
+
+  </div>
+
+
+  <div class="favorite-grid">
+
+    <!-- =========================
+         FRUITS
+    ========================== -->
+
+    <article
+      class="favorite-card favorite-modal-trigger"
+      data-favorite-modal="fruitsModal"
+    >
+
+      <span class="number">
+        01
+      </span>
+
+      <h3>
+        Fruits
+      </h3>
+
+      <ul>
+        <li>Apples</li>
+        <li>Oranges</li>
+        <li>Grapes</li>
+      </ul>
+
+    </article>
+
+
+    <!-- =========================
+         COLORS
+    ========================== -->
+
+    <article
+      class="favorite-card favorite-modal-trigger"
+      data-favorite-modal="colorsModal"
+    >
+
+      <span class="number">
+        02
+      </span>
+
+      <h3>
+        Colors
+      </h3>
+
+      <ul>
+        <li>Olive Green</li>
+        <li>Beige Cream</li>
+        <li>Prussian Blue</li>
+      </ul>
+
+    </article>
+
+
+    <!-- =========================
+         VIAND
+    ========================== -->
+
+    <article
+      class="favorite-card favorite-modal-trigger"
+      data-favorite-modal="viandModal"
+    >
+
+      <span class="number">
+        03
+      </span>
+
+      <h3>
+        Viand
+      </h3>
+
+      <ul>
+        <li>Pork & Chicken Adobo</li>
+        <li>Sour Pork and Liver Stew</li>
+        <li>Ground Pork</li>
+      </ul>
+
+    </article>
+
+  </div>
+
+
+  <p class="image-note">
+    NOTE: These things are my Top 3 picks in terms of Foods and Colors.
+  </p>
+
+</section>
 
     <section class="section music">
       <div class="section-heading">
@@ -241,6 +331,7 @@
         Back to top ↑
     </a>
 </footer>
+
 <div
     class="info-image-modal"
     id="infoImageModal">
@@ -259,7 +350,6 @@
                 alt="">
         </div>
         <div class="info-image-modal-details">
-
             <span
                 class="info-image-modal-category"
                 id="infoImageModalCategory">
@@ -269,11 +359,203 @@
                 Title
             </h2>
             <p id="infoImageModalDescription">
-                Description
-            </p>
+                Description</p>
         </div>
     </div>
 </div>
+
+
+<div
+  class="favorite-category-modal"
+  id="fruitsModal">
+  <div class="favorite-category-modal-box">
+    <button
+      class="favorite-category-modal-close"
+      aria-label="Close Fruits modal">&times;
+    </button>
+    <div class="favorite-category-modal-header">
+      <span class="favorite-modal-number">01 • MY FAVORITES</span>
+      <h2>Favorite <span>Fruits</span></h2>
+      <p>My top three favorite fruits.</p>
+    </div>
+
+    <div class="favorite-items">
+      <article class="favorite-item">
+        <div class="favorite-item-image">
+          <img
+            src="assets/favorites/apples.jpg"
+            alt="Apples">
+        </div>
+        <div class="favorite-item-info">
+          <span>01</span>
+          <h3>Apples</h3>
+          <p>
+            Apples are one of my favorite fruits because
+            they are refreshing, easy to eat, and have a
+            naturally sweet and crisp taste.
+          </p>
+        </div>
+      </article>
+
+      <article class="favorite-item">
+        <div class="favorite-item-image">
+          <img
+            src="assets/favorites/oranges.jpg"
+            alt="Oranges">
+        </div>
+        <div class="favorite-item-info">
+          <span> 02</span>
+          <h3> Oranges </h3>
+          <p>
+            Oranges are among my favorite fruits because
+            of their juicy texture, refreshing taste, and
+            pleasant citrus flavor.
+          </p>
+        </div>
+      </article>
+      <article class="favorite-item">
+        <div class="favorite-item-image">
+          <img
+            src="assets/favorites/grapes.jpg"
+            alt="Grapes">
+        </div>
+        <div class="favorite-item-info">
+          <span>03 </span>
+          <h3> Grapes</h3>
+          <p>
+            Grapes are one of my favorite fruits because
+            they are sweet, easy to eat, and enjoyable as
+            a quick snack.
+          </p>
+        </div>
+      </article>
+    </div>
+  </div>
+</div>
+
+<div
+  class="favorite-category-modal"
+  id="colorsModal">
+  <div class="favorite-category-modal-box">
+    <button
+      class="favorite-category-modal-close"
+      aria-label="Close Colors modal">&times;
+    </button>
+    <div class="favorite-category-modal-header">
+      <span class="favorite-modal-number">02 • MY FAVORITES</span>
+      <h2>Favorite <span>Colors</span></h2>
+      <p>My top three favorite colors. </p>
+    </div>
+    <div class="favorite-items">
+      <article class="favorite-item">
+        <div class="favorite-color-box black-color">
+        </div>
+        <div class="favorite-item-info">
+          <span>01</span>
+          <h3>Olive Green</h3>
+          <p>
+            One of my favorite colors is Olive green because it is appealing and it blends a calming, earthy connection to nature with a sophisticated, grounded neutrality.
+          </p>
+        </div>
+      </article>
+
+      <article class="favorite-item">
+        <div class="favorite-color-box white-color">
+        </div>
+        <div class="favorite-item-info">
+          <span>02</span>
+          <h3>Beige Cream</h3>
+          <p>
+            Beige Cream is one of my favorite colors because it creates a calm, warm, and inviting feeling without being too loud or busy.
+          </p>
+        </div>
+      </article>
+
+      <article class="favorite-item">
+        <div class="favorite-color-box blue-color">
+        </div>
+        <div class="favorite-item-info">
+          <span>03</span>
+          <h3>Prussian Blue</h3>
+          <p>
+            Prussian Blue is one of my favorite colors because of its
+            deeply intense, moody shade that combines the depth of a dark midnight sky with subtle, grounding green undertones.
+          </p>
+        </div>
+      </article>
+    </div>
+  </div>
+</div>
+
+<div
+  class="favorite-category-modal"
+  id="viandModal">
+  <div class="favorite-category-modal-box">
+    <button
+      class="favorite-category-modal-close"
+      aria-label="Close Viand modal">
+      &times;
+    </button>
+    <div class="favorite-category-modal-header">
+      <span class="favorite-modal-number">03 • MY FAVORITES</span>
+      <h2>Favorite <span>Viand</span></h2>
+      <p>My top three favorite viands.</p>
+    </div>
+    <div class="favorite-items">
+      <article class="favorite-item">
+        <div class="favorite-item-image">
+          <img
+            src="assets/favorites/pork-chicken-adobo.jpg"
+            alt="Pork Adobo">
+        </div>
+        <div class="favorite-item-info">
+          <span>01</span>
+          <h3>Pork & Chicken Adobo</h3>
+          <p>
+            Pork & Chicken Adobo is one of my favorite viands
+            because of its savory flavor and the
+            combination of different ingredients.
+          </p>
+        </div>
+      </article>
+
+      <article class="favorite-item">
+        <div class="favorite-item-image">
+          <img
+            src="assets/favorites/sour-pork-liver-stew.jpg"
+            alt="Sour Pork and Liver Stew">
+        </div>
+        <div class="favorite-item-info">
+          <span>02</span>
+          <h3>Sour Pork and Liver Stew</h3>
+          <p>
+            This is one of my favorite viands because
+            of its distinctive sour flavor and rich
+            combination of pork and liver.
+          </p>
+        </div>
+      </article>
+
+      <article class="favorite-item">
+        <div class="favorite-item-image">
+          <img
+            src="assets/favorites/ground-pork.jpg"
+            alt="Ground Pork">
+        </div>
+        <div class="favorite-item-info">
+          <span>03</span>
+          <h3>Ground Pork</h3>
+          <p>
+            Ground pork is one of my favorite viands
+            because it can be prepared in different
+            ways and has a flavorful and satisfying taste.
+          </p>
+        </div>
+      </article>
+    </div>
+  </div>
+</div>
+
 <script src="portfolio.js"></script>
 
 </body>
