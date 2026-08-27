@@ -1014,8 +1014,12 @@ code {
     background: rgba(0, 0, 0, .88);
     backdrop-filter: blur(10px);
     overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
-
+.info-image-modal::-webkit-scrollbar {
+    display: none;
+}
 
 .info-image-modal.active {
     display: flex;
@@ -1026,11 +1030,18 @@ code {
     width: min(1000px, 100%);
     max-height: 94vh;
     overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    
     background: #1B1722;
     border: 1px solid rgba(142, 182, 155, .35);
     border-radius: 28px;
     box-shadow: 0 30px 100px rgba(0, 0, 0, .8);
     animation: infoImageModalOpen .3s ease;
+}
+
+.info-image-modal-box::-webkit-scrollbar {
+    display: none;
 }
 
 @keyframes infoImageModalOpen {
