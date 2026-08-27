@@ -1398,10 +1398,6 @@ code {
 }
 
 
-/* =========================
-   RESPONSIVE - 600px
-========================= */
-
 @media (max-width: 600px) {
 
     .cards.five,
@@ -1456,10 +1452,6 @@ code {
 }
 
 
-/* =========================
-   RESPONSIVE - 380px
-========================= */
-
 @media (max-width: 380px) {
 
     .hero-actions .btn {
@@ -1472,16 +1464,6 @@ code {
         height: 220px;
     }
 }
-
-
-/* =========================
-   MOBILE HERO ORDER
-   On phones/tablets, show the
-   profile picture BEFORE the
-   personal introduction.
-   Desktop keeps the original
-   two-column arrangement.
-========================= */
 
 @media (max-width: 850px) {
 
