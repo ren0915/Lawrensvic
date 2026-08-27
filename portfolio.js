@@ -86,3 +86,105 @@ document.addEventListener(
         }
     }
 );
+
+const favoriteTriggers =
+  document.querySelectorAll(
+    '.favorite-modal-trigger'
+  );
+favoriteTriggers.forEach(
+  function (trigger) {
+    trigger.addEventListener(
+      'click',
+      function () {
+        const modalId =
+          trigger.getAttribute(
+            'data-favorite-modal'
+          );
+        const modal =
+          document.getElementById(
+            modalId
+          );
+        if (!modal) {
+          return;
+        }
+        modal.classList.add(
+          'active'
+        );
+        document.body.style.overflow =
+          'hidden';
+      }
+    );
+  }
+);
+const favoriteCloseButtons =
+  document.querySelectorAll(
+    '.favorite-category-modal-close'
+  );
+favoriteCloseButtons.forEach(
+  function (button) {
+    button.addEventListener(
+      'click',
+      function () {
+        const modal =
+          button.closest(
+            '.favorite-category-modal'
+          );
+        if (!modal) {
+          return;
+        }
+        modal.classList.remove(
+          'active'
+        );
+        document.body.style.overflow ='';
+      }
+    );
+  }
+);
+
+const favoriteModals =
+  document.querySelectorAll(
+    '.favorite-category-modal'
+  );
+favoriteModals.forEach(
+  function (modal) {
+    modal.addEventListener(
+      'click',
+      function (event) {
+        if (
+          event.target === modal
+        ) {
+          modal.classList.remove(
+            'active'
+          );
+          document.body.style.overflow ='';
+        }
+      }
+    );
+  }
+);
+document.addEventListener(
+  'keydown',
+  function (event) {
+
+    if (
+      event.key !== 'Escape'
+    ) {
+      return;
+    }
+    favoriteModals.forEach(
+      function (modal) {
+        if (
+          modal.classList.contains(
+            'active'
+          )
+        ) {
+          modal.classList.remove(
+            'active'
+          );
+        }
+      }
+    );
+    document.body.style.overflow =
+      '';
+  }
+);
