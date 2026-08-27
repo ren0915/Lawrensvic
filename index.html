@@ -12,7 +12,7 @@
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="#home">Lawrensvic<span>.</span></a>
+    <a class="brand" href="#home">Lawrensvic<span></span></a>
     <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
     <nav class="nav">
       <a href="#home">Home</a>
@@ -120,22 +120,40 @@
       <div class="projects-grid">
 
         <article class="project-card">
-          <div class="project-image"><img src="assets/projects/qr-attendance.jpg" alt="QR Code Attendance Monitoring System" onerror="this.style.display='none';"><span class="project-number">01</span></div>
-          <div class="project-content"><p class="project-type">WEB SYSTEM</p><h3>QR Code Attendance Monitoring System</h3><p>A web-based attendance system for QR scanning, student records, time-in/time-out tracking, subject schedules, and attendance monitoring.</p><div class="project-tags"><span>PHP</span><span>MySQL</span><span>JavaScript</span><span>QR</span></div><a class="project-link" href="https://github.com/YOUR-USERNAME/qr-code-attendance-monitoring-system" target="_blank" rel="noopener">GitHub Repository ↗</a></div>
+          <div
+            class="project-image activity-modal-trigger"
+            data-modal-image="assets/projects/qr-attendance.jpg"
+            data-modal-category="WEB SYSTEM"
+            data-modal-title="QR Code Attendance Monitoring System"
+            data-modal-description="A web-based attendance system for QR scanning, student records, time-in/time-out tracking, subject schedules, and attendance monitoring."><img src="assets/projects/qr-attendance.jpg" alt="QR Code Attendance Monitoring System" onerror="this.style.display='none';"><span class="project-number">01</span></div>
+          <div class="project-content"><p class="project-type">WEB SYSTEM</p><h3>QR Code Attendance Monitoring System</h3><p>A web-based attendance system for QR scanning, student records, time-in/time-out tracking, subject schedules, and attendance monitoring.</p><div class="project-tags"><span>PHP</span><span>MySQL</span><span>JavaScript</span><span>QR</span></div>
+        </div>
         </article>
 
         <article class="project-card">
-          <div class="project-image"><img src="assets/projects/student-profiling.jpg" alt="Digital Student Profiling Grade and Announcement Management System" onerror="this.style.display='none';"><span class="project-number">02</span></div>
+          <div class="project-image activity-modal-trigger"
+              data-modal-image="assets/projects/student-profiling.jpg"
+              data-modal-category="ACADEMIC SYSTEM"
+              data-modal-title="Digital Student Profiling, Grade & Announcement Management System"
+              data-modal-description="A proposed integrated school platform for organizing student profiles, grades, and announcements."><img src="assets/projects/student-profiling.jpg" alt="Digital Student Profiling Grade and Announcement Management System" onerror="this.style.display='none';"><span class="project-number">02</span></div>
           <div class="project-content"><p class="project-type">ACADEMIC SYSTEM</p><h3>Digital Student Profiling, Grade &amp; Announcement Management System</h3><p>A proposed integrated school platform for organizing student profiles, grades, and announcements.</p><div class="project-tags"><span>HTML</span><span>CSS</span><span>PHP</span><span>MySQL</span></div><a class="project-link" href="https://github.com/YOUR-USERNAME/digital-student-profiling-grade-announcement-system" target="_blank" rel="noopener">GitHub Repository ↗</a></div>
         </article>
 
         <article class="project-card">
-          <div class="project-image"><img src="assets/projects/Arduino.png" alt="Smart Rain Detector for Clothes Protection" onerror="this.style.display='none';"><span class="project-number">03</span></div>
+          <div class="project-image activity-modal-trigger"
+              data-modal-image="assets/projects/Arduino.png"
+              data-modal-category="ARDUINO PROJECT"
+              data-modal-title="Smart Rain Detector for Clothes Protection"
+              data-modal-description="An Arduino prototype using a rain sensor and servo motor logic to help protect clothes from rain."><img src="assets/projects/Arduino.png" alt="Smart Rain Detector for Clothes Protection" onerror="this.style.display='none';"><span class="project-number">03</span></div>
           <div class="project-content"><p class="project-type">ARDUINO PROJECT</p><h3>Smart Rain Detector for Clothes Protection</h3><p>An Arduino prototype using a rain sensor and servo motor logic to help protect clothes from rain.</p><div class="project-tags"><span>Arduino</span><span>Sensor</span><span>Servo</span><span>C/C++</span></div><a class="project-link" href="https://github.com/YOUR-USERNAME/smart-rain-detector" target="_blank" rel="noopener">GitHub Repository ↗</a></div>
         </article>
 
         <article class="project-card">
-          <div class="project-image"><img src="assets/projects/OJT2.jpg" alt="Smart Rain Detector for Clothes Protection" onerror="this.style.display='none';"><span class="project-number">04</span></div>
+         <div class="project-image activity-modal-trigger"
+              data-modal-image="assets/projects/OJT2.jpg"
+              data-modal-category="ON-THE-JOB TRAINING"
+              data-modal-title="Department of Public Works and Highways Tarlac 1st District Engineering Office"
+              data-modal-description="A memorable activity that I experienced, going through how work flows in real-world settings, meeting new people, and learning and familiarizing myself with new things."><img src="assets/projects/OJT2.jpg" alt="Smart Rain Detector for Clothes Protection" onerror="this.style.display='none';"><span class="project-number">04</span></div>
           <div class="project-content"><p class="project-type">On-The-Job Training</p><h3>Department of Public Works and Highways Tarlac 1st District Engineering Office</h3><p>A memorable activity that I experience, going through how the work flows in the real-world settings, meeting new people, and leearning/familiarizing new things.</p><div class="project-tags"><span>Training</span><span>Real-word</span><span>Experience</span><span>Learnings</span></div><a class="project-link" href="https://github.com/YOUR-USERNAME/smart-rain-detector" target="_blank" rel="noopener">GitHub Repository ↗</a></div>
         </article>
       </div>
@@ -176,10 +194,26 @@
         <h2>Places I'd Like to <span>Visit</span></h2>
       </div>
       <div class="places-grid">
-        <article class="place-card japan"><div><span>01</span><h3>Shibuya, Japan</h3><p>Entertainment, shopping, fashion, and restaurants in one of Tokyo's popular areas.</p></div></article>
-        <article class="place-card thailand"><div><span>02</span><h3>Chinatown, Thailand</h3><p>A famous Bangkok area known for shopping and cuisine.</p></div></article>
-        <article class="place-card korea"><div><span>03</span><h3>Han River, Korea</h3><p>A major river in the central region of the Korean Peninsula.</p></div></article>
-        <article class="place-card usa"><div><span>04</span><h3>San Francisco, California</h3><p>Known for ocean and bay views, history, culture, and food.</p></div></article>
+        <article class="place-card japan place-modal-trigger"
+          data-modal-image="assets/places/shibuyaJP.jpg"
+          data-modal-category="DREAM DESTINATION"
+          data-modal-title="Shibuya, Japan"
+          data-modal-description="Entertainment, shopping, fashion, and restaurants in one of Tokyo's popular areas. Shibuya is one of the places I would like to visit and experience personally."><div><span>01</span><h3>Shibuya, Japan</h3><p>Entertainment, shopping, fashion, and restaurants in one of Tokyo's popular areas.</p></div></article>
+        <article class="place-card thailand place-modal-trigger"
+          data-modal-image="assets/places/chinatownTH.jpg"
+          data-modal-category="DREAM DESTINATION"
+          data-modal-title="Chinatown, Thailand"
+          data-modal-description="A famous Bangkok area known for shopping and cuisine. I would like to experience the atmosphere, food, culture, and environment of this place."><div><span>02</span><h3>Chinatown, Thailand</h3><p>A famous Bangkok area known for shopping and cuisine.</p></div></article>
+        <article class="place-card korea place-modal-trigger"
+          data-modal-image="assets/places/seoulK.jpg"
+          data-modal-category="DREAM DESTINATION"
+          data-modal-title="Han River, Korea"
+          data-modal-description="A major river in the central region of the Korean Peninsula. It is one of the places I would like to visit and experience when I have the opportunity to travel."><div><span>03</span><h3>Han River, Korea</h3><p>A major river in the central region of the Korean Peninsula.</p></div></article>
+        <article class="place-card usa place-modal-trigger"
+          data-modal-image="assets/places/sanfranciscoC.jpg"
+          data-modal-category="DREAM DESTINATION"
+          data-modal-title="San Francisco, California"
+          data-modal-description="Known for ocean and bay views, history, culture, and food. San Francisco is one of the destinations I would like to visit in the future."><div><span>04</span><h3>San Francisco, California</h3><p>Known for ocean and bay views, history, culture, and food.</p></div></article>
       </div>
       <p class="image-note">NOTE: Hopefully after I graduate and find a decent work, I can travel and vist these places.</p>
     </section>
@@ -199,12 +233,48 @@
       </div>
     </section>
   </main>
-
   <footer>
-    <p>© 2026 Lawrensvic M. Arangel</p>
-    <a href="#home">Back to top ↑</a>
-  </footer>
+    <p>
+        © 2026 Lawrensvic M. Arangel
+    </p>
+    <a href="#home">
+        Back to top ↑
+    </a>
+</footer>
+<div
+    class="info-image-modal"
+    id="infoImageModal">
+    <div class="info-image-modal-overlay"></div>
+    <div class="info-image-modal-box">
+        <button
+            class="info-image-modal-close"
+            id="infoImageModalClose"
+            aria-label="Close modal">
+            &times;
+        </button>
+        <div class="info-image-modal-picture">
+            <img
+                id="infoImageModalImage"
+                src=""
+                alt="">
+        </div>
+        <div class="info-image-modal-details">
 
-  <script src="portfolio.js"></script>
+            <span
+                class="info-image-modal-category"
+                id="infoImageModalCategory">
+                CATEGORY
+            </span>
+            <h2 id="infoImageModalTitle">
+                Title
+            </h2>
+            <p id="infoImageModalDescription">
+                Description
+            </p>
+        </div>
+    </div>
+</div>
+<script src="portfolio.js"></script>
+
 </body>
 </html>
