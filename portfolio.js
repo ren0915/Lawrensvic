@@ -188,3 +188,74 @@ document.addEventListener(
       '';
   }
 );
+
+const doubleActivityTriggers =
+  document.querySelectorAll(
+    '.activity-double-modal-trigger'
+  );
+doubleActivityTriggers.forEach(function (trigger) {
+  trigger.addEventListener(
+    'click',
+    function () {
+      const modalId =
+        trigger.getAttribute(
+          'data-double-modal'
+        );
+      const modal =
+        document.getElementById(modalId);
+      if (!modal) {
+        return;
+      }
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+  );
+});
+const doubleActivityModals =
+  document.querySelectorAll(
+    '.activity-double-modal'
+  );
+doubleActivityModals.forEach(function (modal) {
+  const closeButton =
+    modal.querySelector(
+      '.activity-double-modal-close'
+    );
+  if (closeButton) {
+    closeButton.addEventListener(
+      'click',
+      function () {
+        modal.classList.remove(
+          'active'
+        );
+        document.body.style.overflow = '';
+      }
+    );
+  }
+  modal.addEventListener(
+    'click',
+    function (event) {
+      if (event.target === modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    }
+  );
+});
+document.addEventListener(
+  'keydown',
+  function (event) {
+    if (event.key !== 'Escape') {
+      return;
+    }
+    doubleActivityModals.forEach(
+      function (modal) {
+        if (
+          modal.classList.contains('active' )
+        ) {
+          modal.classList.remove('active' );
+          document.body.style.overflow = '';
+        }
+      }
+    );
+  }
+);
