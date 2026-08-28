@@ -1458,3 +1458,238 @@ code {
     height: 170px;
   }
 }
+
+.activity-double-modal-trigger {
+  cursor: pointer;
+}
+.activity-double-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: rgba(0, 0, 0, .88);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+.activity-double-modal.active {
+  display: flex;
+}
+.activity-double-modal-box {
+  position: relative;
+  width: min(1100px, 100%);
+  max-height: 94vh;
+  overflow-y: auto;
+  padding: 4rem;
+  border-radius: 30px;
+  background: #1B1722;
+  border:
+    1px solid
+    rgba(142, 182, 155, .35);
+  box-shadow:
+    0 30px 100px
+    rgba(0, 0, 0, .8);
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.activity-double-modal-box::-webkit-scrollbar {
+  display: none;
+}
+.activity-double-modal-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+  padding-right: 3rem;
+}
+.activity-double-modal-header h2 {
+  font:
+    800 clamp(3rem, 6vw, 5rem)
+    'Montserrat',
+    sans-serif;
+  margin-bottom: 1rem;
+}
+.activity-double-modal-header h2 span {
+  color: var(--pink);
+}
+.activity-double-modal-header > p:last-child {
+  color: var(--muted);
+  font-size: 1.5rem;
+  max-width: 700px;
+  margin: auto;
+}
+.double-activity-item {
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  border-radius: 25px;
+  background:
+    rgba(27, 23, 34, .65);
+  border:
+    1px solid
+    rgba(142, 182, 155, .25);
+  transition: .3s;
+}
+.double-activity-item:last-child {
+  margin-bottom: 0;
+}
+.double-activity-item:hover {
+  border-color: var(--pink);
+  transform: translateY(-3px);
+}
+.double-activity-title {
+  margin-bottom: 2rem;
+}
+.double-activity-title span {
+  color: var(--pink);
+  font:
+    800 1.1rem
+    'Montserrat',
+    sans-serif;
+  letter-spacing: 2px;
+}
+.double-activity-title h3 {
+  margin-top: .5rem;
+  font:
+    800 2.5rem
+    'Montserrat',
+    sans-serif;
+}
+.double-activity-images {
+  display: grid;
+  grid-template-columns:
+    repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.double-activity-image {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 18px;
+  background: #0b2b26;
+}
+.double-activity-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: .4s;
+}
+.double-activity-image:hover img {
+  transform: scale(1.05);
+}
+.double-activity-information {
+  border-top:
+    1px solid
+    rgba(255, 255, 255, .1);
+  padding-top: 1.8rem;
+}
+.double-activity-information p {
+  color: var(--muted);
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
+.activity-double-modal-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 10001;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  background:
+    rgba(0, 0, 0, .8);
+  color: #fff;
+  font-size: 3rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: .3s;
+}
+.activity-double-modal-close:hover {
+
+  background: var(--pink);
+
+  transform: rotate(90deg);
+}
+
+@media (max-width: 850px) {
+  .activity-double-modal {
+    padding: 1.5rem;
+  }
+  .activity-double-modal-box {
+    padding: 3rem;
+    max-height: 94vh;
+  }
+  .double-activity-images {
+    gap: 1rem;
+  }
+  .double-activity-image {
+    height: 230px;
+  }
+}
+
+@media (max-width: 600px) {
+  .activity-double-modal {
+    padding: 1rem;
+  }
+  .activity-double-modal-box {
+    padding:
+      2rem
+      1.5rem
+      2.5rem;
+    max-height: 96vh;
+    border-radius: 22px;
+  }
+  .activity-double-modal-header {
+    margin-bottom: 2.5rem;
+    padding-right: 2.5rem;
+  }
+  .activity-double-modal-header h2 {
+    font-size: 2.5rem;
+  }
+  .activity-double-modal-header > p:last-child {
+    font-size: 1.3rem;
+  }
+  .double-activity-images {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .double-activity-image {
+    height: 220px;
+  }
+  .double-activity-item {
+    padding: 1.5rem;
+    border-radius: 20px;
+  }
+  .double-activity-title h3 {
+    font-size: 2rem;
+  }
+  .double-activity-information p {
+    font-size: 1.3rem;
+    line-height: 1.7;
+  }
+  .activity-double-modal-close {
+    top: 1rem;
+    right: 1rem;
+    width: 40px;
+    height: 40px;
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .activity-double-modal-box {
+    padding:
+      1.8rem
+      1.2rem
+      2rem;
+  }
+  .activity-double-modal-header h2 {
+    font-size: 2.1rem;
+  }
+
+  .double-activity-image {
+    height: 180px;
+  }
+}
